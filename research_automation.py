@@ -46,17 +46,20 @@ C = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
 for a in A:
     for b in B:
         for c in C:
+            #raw_img: 生データ
             path = './raw_img/well{}-{}-{}.jpg'.format(a, b, c)
             path2 = './resize/well{}_{}_{}.jpg'.format(a, b, c)
             FRpath = './raw_img/well{}-{}-{}_FR.jpg'.format(a, b, c)
             FRpath2 = './resize/well{}_{}_{}_FR.jpg'.format(a, b, c)
             DAPIpath = './raw_img/well{}-{}-{}_DAPI.jpg'.format(a, b, c)
             DAPIpath2 = './resize/well{}_{}_{}_DAPI.jpg'.format(a, b, c)
+
+            #画像のサイズをそろえる
             resize_image(path, path2)
             resize_image(FRpath, FRpath2)
             resize_image(DAPIpath, DAPIpath2)
 
-
+            #画像を並び替える
             d = a + 72 * (b - 1) + 6 * (c - 1)
 
             new_path = './alignment/{}.jpg'.format(d)
@@ -71,6 +74,7 @@ for a in A:
             print(img_path, a, b, c, d)
             path2 = './mask_img/{}.jpg'.format(d)
 
+            #明度が閾値以下のピクセルをマスクする
             lower_value = 90
             M = 0
             m = 1
@@ -118,6 +122,7 @@ for a in A:
                 M = max(left_sig, right_sig)
                 m = min(left_sig, right_sig)
 
+            #画像の右半分と左半分のマスクされていないピクセルの数を比較して、多いほうを右に合わせるように画像を反転する
             if left_sig > right_sig:
                 img_flip_lr = cv.flip(img2, 1)
                 img_flip_lr2 = cv.flip(img3, 1)
