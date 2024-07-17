@@ -7,7 +7,11 @@
 <p></p>
 <br>
 これらの画像処理を自動化しました。
+
+# 脳の薄切と撮影
 <img src="explain/research_explanation1.jpg" width="600">
+
+# このソースコードで行っている処理
 <img src="explain/research_explanation4.jpg" width="600">
 <img src="explain/research_explanation2.jpg" width="600">
 <img src="explain/research_explanation3.jpg" width="600">
