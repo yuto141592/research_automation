@@ -10,6 +10,7 @@
 
 # 脳の薄切と撮影
 <img src="explain/research_explanation1.jpg" width="600">
+50 µmの隣り合った切片の違いを目視で確認することは難しいため、6切片（300 µm）ごとに目視で並べてスライドガラスに貼り付けて撮影する。
 
 # このソースコードで行っている処理
 <img src="explain/research_explanation4.jpg" width="600">
