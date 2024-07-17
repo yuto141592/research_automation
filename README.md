@@ -7,3 +7,6 @@
 <p></p>
 <br>
 これらの画像処理を自動化しました。
+<img src="explain/research_explanation1.jpg" width="600">
+<img src="explain/research_explanation2.jpg" width="600">
+<img src="explain/research_explanation3.jpg" width="600">
