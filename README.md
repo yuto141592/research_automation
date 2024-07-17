@@ -1,3 +1,3 @@
 # research_automation
 
-<img src="UI/research_automation.png" width="600">
+<img src="explain/research_automation.png" width="600">
