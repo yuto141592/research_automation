@@ -70,11 +70,11 @@ for a in A:
             align(FRpath2, new_path_FR)
             align(DAPIpath2, new_path_DAPI)
 
+            #明度が閾値以下のピクセルをマスクする
             img_path = new_path
             print(img_path, a, b, c, d)
             path2 = './mask_img/{}.jpg'.format(d)
 
-            #明度が閾値以下のピクセルをマスクする
             lower_value = 90
             M = 0
             m = 1
