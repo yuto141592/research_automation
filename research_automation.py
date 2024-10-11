@@ -36,6 +36,7 @@ def resize_image(path, path2):
         img_resize.save(path2, dpi = (200, 200))
         img2.close()
 
+#カスタム可能
 #A : ウェルの番号
 #B : スライドガラスの番号
 #C : 切片の番号
